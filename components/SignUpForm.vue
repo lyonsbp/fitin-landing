@@ -4,7 +4,7 @@
       Subscribe to our biweekly newsletter!
     </h2>
     <p>Get helpful tips to help you get in shape and stay in shape for life!</p>
-    <form class="mt-4">
+    <form class="mt-4 text-black">
       <input
         v-model="firstName"
         class="rounded mr-2 pl-2 py-2 w-2/3 mb-2"

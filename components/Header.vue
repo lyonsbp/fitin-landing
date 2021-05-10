@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="w-full">
     <div class="flex bg-brandGreen justify-around text-white py-2">
       <div class="">
         <div>support@fitin.com</div>
@@ -11,13 +11,12 @@
       </div>
     </div>
     <div class="flex justify-around bg-white py-4">
-      <span>Logo</span>
+      <span class="mt-2">Logo</span>
       <nav class="text-gray-600 font-semibold">
-        <a href="/">Fitness</a>
-        <a href="/">About Us</a>
-        <a href="/">FAQ</a>
+        <a href="/" class="active mx-2">Fitness</a>
+        <a href="/" class="mx-2">About Us</a>
+        <a href="/" class="mx-2">FAQ</a>
         <button class="btn primary ml-5">JOIN</button>
-        <button class="btn secondary">LOGIN</button>
       </nav>
     </div>
   </header>

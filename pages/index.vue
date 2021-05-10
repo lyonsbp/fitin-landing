@@ -1,59 +1,27 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">fitin-landing</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+  <div class="container bleed">
+    <div class="flex flex-col justify-between mb-10">
+      <HeroSection />
+      <SignUpForm />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-
-export default Vue.extend({})
+import SignUpForm from '@/components/SignUpForm.vue'
+import HeroSection from '@/components/HeroSection.vue'
+export default Vue.extend({
+  components: {
+    HeroSection,
+    SignUpForm,
+  },
+})
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+<style lang="postcss">
+.bleed {
+  @apply min-h-screen justify-center text-center mx-auto;
 }
 
 .subtitle {
